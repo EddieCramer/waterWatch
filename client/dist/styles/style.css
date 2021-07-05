@@ -1,0 +1,193 @@
+body {
+  background: rgb(34, 31, 31);
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 15% 75% 10%;
+  font-family: 'Mukta Vaani', sans-serif;
+}
+
+header {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  border-bottom: solid 1px white;
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+footer {
+  grid-column: 1 / 4;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 25px;
+  border-top: solid 1px white;
+  grid-row: 3;
+}
+
+div#title {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 250px;
+  max-height: 100%;
+}
+
+h1.title {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  grid-column: 1;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#water-drop {
+  max-height: 100px;
+  margin: auto;
+  padding: 0;
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+#app {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  height: 90%;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#bottle-view {
+  grid-column: 2;
+}
+
+#lid {
+  height: 50px;
+  width: 75px;
+  margin: auto;
+  margin-bottom: 12px;
+  border: solid 6px white;
+  border-radius: 15px;
+}
+
+#bottle {
+  height: 500px;
+  width:  200px;
+  margin: auto;
+  border: solid 6px rgb(34, 31, 31);
+  border-radius: 15px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 0 0 0 6px #fff, 0 20px 35px rgba(0,0,0,1);
+  background-position: 0px 350px;
+  background: rgb(48, 106, 182);
+
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40px 25% 25% 25% 25%;
+}
+
+#log {
+  grid-column: 1;
+  margin: auto;
+  font-size: 24px;
+}
+
+#log-stats {
+  border-bottom: solid 2px white;
+  text-align: center;
+}
+
+#progress {
+  color: rgb(48, 106, 182);
+}
+
+#add {
+  grid-column: 3;
+  margin: auto;
+}
+
+#goal {
+  grid-column: 2;
+  margin: auto;
+  font-size: 48px;
+}
+
+#form-goal {
+  height: 40px;
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 2px;
+  margin: 2px;
+}
+
+#form-submit {
+  margin: auto;
+  margin-left: 30px;
+  border-radius: 15px;
+  height: 40px;
+  font-size: 24px;
+  padding: 5px;
+  background: none;
+  color: white;
+  border: solid 2px white
+}
+
+#form-submit:hover {
+  color: grey;
+  border: solid 2px grey;
+  cursor: pointer;
+}
+
+#unit {
+  font-size: 24px;
+  margin-left: -40px;
+  color: grey;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: 'Scada', sans-serif;
+
+}
+
+.checkpoint {
+  grid-column: 3;
+  border-top: solid 1px white;
+}
+
+#max {
+  grid-row: 2;
+}
+
+#three-quarters {
+  grid-row: 3;
+}
+
+#half {
+  grid-row: 4;
+}
+
+#one-quarter {
+  grid-row: 5;
+}
+
+#login {
+  position: absolute;
+
+  top: 25px;
+  right: 100px;
+}
+
+.login {
+  background: none;
+  color: white;
+  border: none;
+}
+
+.login:hover {
+  cursor: pointer;
+  color: grey;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "waterwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js",
+    "build": "npx webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddieCramer/waterWatch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddieCramer/waterWatch/issues"
+  },
+  "homepage": "https://github.com/EddieCramer/waterWatch#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9",
+    "pg": "^8.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1"
+  }
+}
