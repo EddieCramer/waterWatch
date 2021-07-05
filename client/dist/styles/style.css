@@ -113,6 +113,13 @@ h1.title {
   grid-column: 2;
   margin: auto;
   font-size: 48px;
+  text-align: center;
+}
+
+.premade {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
 }
 
 #form-goal {

@@ -22,6 +22,9 @@ const Goal = ({ setGoal }) => {
       <span id='unit'>oz</span>
       <button id='form-submit' onClick={ handleSubmit }>Submit</button>
       <br></br>
+      <button className='premade'></button>
+      <button className='premade'></button>
+      <button className='premade'></button>
     </div>
   )
 }
