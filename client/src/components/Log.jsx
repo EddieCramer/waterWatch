@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-const Log = ({ goal, current }) => {
+const Log = ({ goal, current, user }) => {
 
   return (
     <div id='log'>
-      <h2 id='log-stats'>Your Stats</h2>
+      <h2 id='log-stats'>{user}'s Stats</h2>
       <h3>Todays Progress: <span id='progress'>{ current + '/' + goal }</span></h3>
     </div>
   )
