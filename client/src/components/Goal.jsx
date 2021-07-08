@@ -38,7 +38,8 @@ const Goal = ({ setGoal, user }) => {
 
   return (
     <div id='goal'>
-      <h2 id='goal-title'>Welcome { user }! <br></br> Set Your Daily Goal</h2>
+      <h2 id='goal-welcome'>Welcome { user }!</h2>
+      <h2 id='goal-title'>Set Your Daily Goal :</h2>
       <input className='form-input' onChange={ handleChange } value={ input }></input>
       <span className='unit'>oz</span>
       <button className='form-submit' onClick={ handleSubmit }>Submit</button>

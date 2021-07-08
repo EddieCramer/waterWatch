@@ -31,11 +31,10 @@ const Chart = ({ logs }) => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" style={{fontSize: "16px"}}/>
           <YAxis domain={[0, ('dataMax + 100')]} style={{fontSize: "16px"}}/>
           <Legend />
-          <Line type="monotone" dataKey="actual" stroke="#8884d8" activeDot={{ r: 8 }} dot={false}/>
+          <Line type="monotone" dataKey="actual" stroke="rgb(48, 106, 182)" activeDot={{ r: 8 }} dot={false}/>
           <Line type="monotone" dataKey="goal" stroke="#82ca9d" dot={false}/>
         </LineChart>
       </ResponsiveContainer>

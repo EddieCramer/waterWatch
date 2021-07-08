@@ -182,6 +182,7 @@ h1.title {
 
 #goal {
   grid-column: 2;
+  grid-row: 1 / 4;
   margin: auto;
   font-size: 48px;
   text-align: center;
@@ -189,6 +190,10 @@ h1.title {
 
 #goal-title {
   border-bottom: solid 2px white;
+  text-align: center;
+}
+
+#goal-welcome {
   text-align: center;
 }
 

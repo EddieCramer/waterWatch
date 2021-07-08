@@ -36,6 +36,10 @@ const Add = ({ current, setCurrent, user, goal }) => {
     setInput(e.target.name);
   }
 
+  const renderMessage = () => {
+    return current > goal ? <h2 id='success'>You hit your daily goal!</h2> : null;
+  }
+
   return (
     <div id='add'>
       <h2 id='add-title'>Add Water</h2>
@@ -53,6 +57,7 @@ const Add = ({ current, setCurrent, user, goal }) => {
         <p className='button-amount two'>12oz</p>
         <p className='button-amount three'>8oz</p>
       </div>
+      { renderMessage() }
     </div>
   )
 }
