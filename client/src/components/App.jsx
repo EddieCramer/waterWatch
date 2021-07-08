@@ -5,28 +5,38 @@ import Add from './Add.jsx';
 import Logout from './Logout.jsx';
 import Log from './Log.jsx';
 import Login from './Login.jsx';
+import Quote from './Quote.jsx';
 
 const App = () => {
 
   const [ goal, setGoal ] = useState(0);
   const [ current, setCurrent ] = useState(0);
   const [ user, setUser ] = useState('');
+  const [ logs, setLogs ] = useState([]);
 
   return user
   ? goal
       ? (
         <>
-          <Logout />
-          <Log goal={ goal } current={ current } user={ user }/>
+          <Quote />
+          <Logout setGoal={ setGoal } setCurrent={ setCurrent } setUser={ setUser } setLogs={ setLogs }/>
+          <Log goal={ goal } current={ current } user={ user } logs={ logs }/>
           <BottleView goal={ goal } current={ current }/>
-          <Add current={ current } setCurrent={ setCurrent }/>
+          <Add current={ current } setCurrent={ setCurrent } user={ user } goal={ goal }/>
         </>
       )
       : (
-          <Goal setGoal={ setGoal }/>
+        <>
+          <Quote />
+          <Goal setGoal={ setGoal } user={ user }/>
+        </>
       )
   : (
-    <Login setUser={ setUser }/>
+    <>
+      <Quote />
+      <h2 id='intro'>Welcome to WaterWatch, <br></br> the web app designed to help you track your daily water intake!</h2>
+      <Login setUser={ setUser } setGoal={ setGoal } setCurrent={ setCurrent } setLogs={ setLogs }/>
+    </>
   )
 }
 

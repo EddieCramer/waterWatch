@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import moment from 'moment';
 
-const Add = ({ current, setCurrent }) => {
+const Add = ({ current, setCurrent, user, goal }) => {
 
   const [input, setInput] = useState('');
 
@@ -13,8 +15,19 @@ const Add = ({ current, setCurrent }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setCurrent(Number(input) + current);
-    setInput('');
+    let data = {
+      name: user,
+      goal: goal,
+      actual: Number(input) + current,
+      date: moment().format('YYYY-MM-DD')
+    }
+
+    axios.put('/logs', data)
+      .then(res => {
+        setCurrent(Number(input) + current);
+        setInput('');
+      })
+
   }
 
   const handleButton = (e) => {

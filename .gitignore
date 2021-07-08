@@ -101,3 +101,9 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# config
+config.js
+
+# data
+./database/data.sql

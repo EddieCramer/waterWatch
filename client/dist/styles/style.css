@@ -21,6 +21,16 @@ header {
   grid-row: 1;
 }
 
+#quote {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+}
+
 footer {
   grid-column: 1 / 4;
   margin-left: 100px;
@@ -61,6 +71,13 @@ h1.title {
   margin: auto;
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+#intro {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  text-align: center;
 }
 
 #bottle-view {
@@ -95,12 +112,31 @@ h1.title {
 
 #log {
   grid-column: 1;
+  grid-row: 1 / 4;
   margin: auto;
   font-size: 24px;
 }
 
 #log-stats {
+  margin: auto;
   border-bottom: solid 2px white;
+  text-align: center;
+}
+
+#log-today {
+  margin: auto;
+  text-align: center;
+}
+
+#log-history {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#no-history {
+  margin: auto;
   text-align: center;
 }
 
@@ -108,8 +144,15 @@ h1.title {
   color: rgb(48, 106, 182);
 }
 
+#chart {
+  width: 400px;
+  height: 300px;
+}
+
 #add {
   grid-column: 3;
+  grid-row: 1 / 4;
+
   margin: auto;
   text-align: center;
 }
@@ -122,6 +165,7 @@ h1.title {
 
 #login {
   grid-column: 2;
+  grid-row: 2;
   margin: auto;
   font-size: 48px;
   text-align: center;
