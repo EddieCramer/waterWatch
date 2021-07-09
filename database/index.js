@@ -35,6 +35,7 @@ const addLog = (name, goal, actual, callback) => {
 
 const updateLog = (name, goal, actual, date, callback) => {
   let queryArgs = [name, goal, actual, date];
+  console.log(queryArgs);
   let queryString = `
     UPDATE logs
     SET goal = $2, actual = $3

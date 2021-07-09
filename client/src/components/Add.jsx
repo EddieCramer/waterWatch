@@ -16,7 +16,7 @@ const Add = ({ current, setCurrent, user, goal }) => {
     e.preventDefault();
 
     let data = {
-      name: user,
+      name: user.toUpperCase(),
       goal: goal,
       actual: Number(input) + current,
       date: moment().format('YYYY-MM-DD')
@@ -37,7 +37,7 @@ const Add = ({ current, setCurrent, user, goal }) => {
   }
 
   const renderMessage = () => {
-    return current > goal ? <h2 id='success'>You hit your daily goal!</h2> : null;
+    return current >= goal ? <h2 id='success'>You hit your daily goal!</h2> : null;
   }
 
   return (
